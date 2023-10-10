@@ -1,25 +1,37 @@
-export default class Person {
-  name;
-  age;
-  city;
+export default class bankomat {
+  cardinserted;
+  validcard;
+  machinebalance;
 
-  constructor(name, age, city) {
-    this.name = name;
-    this.age = age;
-    this.city = city;
-    console.log("Nu är en person skapad!")
+  constructor(cardinserted, validcard, machinebalance) {
+    this.cardinserted = this.cardinserted;
+    this.validcard = this.validcard;
+    this.machinebalance = this.machinebalance;
+    console.log("Nu är en bakomat skapad!")
   }
 
-  greeting() {
-    console.log(`Hej jag heter ${this.name} och jag är ${this.age} år gammal. Jag bor i ${this.city}.`)
+  insertcard() {
+
   }
 
-  changeCity(newCity) {
-    this.city = newCity;
+  enterpin() {
+
   }
 
-  yearsLeftToPension(pensionAge) {
-    let yearsLeft = pensionAge - this.age;
-    console.log(`Du har ${yearsLeft} år kvar till pensionen.`)
+  withdrawmoney() {
+
   }
-}
+
+  enterpin(y) {
+
+  }
+
+
+  getbalance() {
+
+  }
+
+  ejectcard() {
+
+  }
+

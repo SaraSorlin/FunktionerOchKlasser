@@ -1,25 +1,21 @@
-export default class Person {
-  name;
-  age;
-  city;
+export default class card {
+  cardbalance;
+  pin;
 
-  constructor(name, age, city) {
-    this.name = name;
-    this.age = age;
-    this.city = city;
-    console.log("Nu är en person skapad!")
+
+  constructor(cardbalance, pin) {
+    this.cardbalance = cardbalance;
+    this.pin = pin;
+    console.log("Nu är kortet skapat!")
   }
 
-  greeting() {
-    console.log(`Hej jag heter ${this.name} och jag är ${this.age} år gammal. Jag bor i ${this.city}.`)
+  comparepin() {
+    console.log(`Hej jag heter ${this.pin} och jag är ${this.pin} år gammal. Jag bor i ${this.pin}.`)
   }
 
-  changeCity(newCity) {
-    this.city = newCity;
+  getcardbalance(cardbalance) {
+    this.city = cardbalance;
   }
 
-  yearsLeftToPension(pensionAge) {
-    let yearsLeft = pensionAge - this.age;
-    console.log(`Du har ${yearsLeft} år kvar till pensionen.`)
-  }
+
 }
